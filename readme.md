@@ -12,6 +12,6 @@ With a server running Apache and PHP, either clone this repository or upload  `/
 ```
 Now, restart the apache process.
 
-Make sure to run `node install` from within the `/acs-app/` directory to create all of the node modules.
+Make sure to run `npm install` from within the `/acs-app/` directory to create all of the node modules.
 
 Then simply open a browser to http://localhost:80 or whichever port and server name you specified above.
