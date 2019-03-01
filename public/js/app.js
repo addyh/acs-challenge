@@ -1863,6 +1863,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Panel",
@@ -6358,7 +6378,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-79f9e0a9]  {\n    margin-top: 40px;\n}\n.card-header[data-v-79f9e0a9] {\n    font-weight: bold;\n    font-size: 25pt;\n}\n.abbreviation[data-v-79f9e0a9] {\n    font-size: 16pt;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-79f9e0a9]  {\n    margin-top: 40px;\n}\n.abbreviation[data-v-79f9e0a9] {\n    font-size: 16pt;\n}\n.panel-table[data-v-79f9e0a9] {\n    width: 100%;\n    border-width: 0px;\n}\n.panel-header[data-v-79f9e0a9] {\n    font-weight: bold;\n    font-size: 25pt;\n}\n.panel-description[data-v-79f9e0a9] {\n    font-family: Courier;\n    line-height: 85%;\n}\n\n", ""]);
 
 // exports
 
@@ -37701,13 +37721,56 @@ var render = function() {
         _vm._l(_vm.panels, function(panel) {
           return _c("div", { key: panel.id, staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
-              _vm._v(
-                "\n                    " +
-                  _vm._s(panel.name) +
-                  " —\n                    "
-              ),
-              _c("span", { staticClass: "abbreviation" }, [
-                _vm._v("(" + _vm._s(panel.abbreviation) + ")")
+              _c("table", { staticClass: "panel-table" }, [
+                _c("tr", [
+                  _c("td", { staticClass: "panel-header" }, [
+                    _vm._v(
+                      "\n                                " +
+                        _vm._s(panel.name) +
+                        "\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("div", { staticClass: "panel-description" }, [
+                      _vm._v(
+                        "\n                            Panel ID:     " +
+                          _vm._s(panel.id)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Abbreviation: " +
+                          _vm._s(panel.abbreviation)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Alias:        " +
+                          _vm._s(panel.alias)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Description:  " +
+                          _vm._s(panel.description)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Identifier:   " +
+                          _vm._s(panel.identifier)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Created at:   " +
+                          _vm._s(panel.created_at)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                            Updated at:   " +
+                          _vm._s(panel.updated_at) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
               ])
             ]),
             _vm._v(" "),
