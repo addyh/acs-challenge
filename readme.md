@@ -6,7 +6,7 @@ With a server running Apache and PHP, either clone this repository or upload  `/
 
 ```apacheconf
 <VirtualHost *:80>
-    DocumentRoot "C:/xampp/htdocs/acs-app/public"
+    DocumentRoot "PATH/TO/acs-app/public"
     ServerName localhost
 </VirtualHost>
 ```
