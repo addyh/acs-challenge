@@ -10,3 +10,4 @@ With a server running Apache and PHP, either clone this repository or upload  `/
     ServerName localhost
 </VirtualHost>
 ```
+Then simply open a browser to http://localhost:80 or whichever port and server name you specified.
