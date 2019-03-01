@@ -12,12 +12,12 @@ With a server running Apache and PHP, either clone this repository or upload  `/
 ```
 Now, restart the apache process.
 
-Then run the following lines of code  from within the `/acs-app/` directory to create all of the files and directories that were too large to include in the git repository. Also make sure that you have NodeJS, npm  and Composer installed on the server.
+Then run the following lines of code  from within the `/acs-app/` directory to create all of the files and directories that were too large to include in the git repository. Also make sure that you have npm and Composer installed on the server.
 
 ```
+composer update
 npm install
 npm run prod
-composer update
 ```
 
 Then simply open a browser to http://localhost:80 or whichever port and server name you specified above.
