@@ -18,7 +18,7 @@
                                 <td class="lab-test-col-2">
                                     <b>{{labTest.name}}</b><br />
                                     {{labTest.id}}<br />
-                                    {{labTest.id}}<br />
+                                    {{labTest.panel_id}}<br />
                                     {{labTest.abbreviation}}<br />
                                     {{labTest.high_value}}
                                 </td>

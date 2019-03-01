@@ -37776,7 +37776,7 @@ var render = function() {
                         _c("br"),
                         _vm._v(
                           "\n                                " +
-                            _vm._s(labTest.id)
+                            _vm._s(labTest.panel_id)
                         ),
                         _c("br"),
                         _vm._v(
