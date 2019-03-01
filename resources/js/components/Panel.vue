@@ -5,27 +5,25 @@
                 <div v-bind:key="panel.id" v-for="panel in panels" class="card">
 
                     <div class="card-header">
-                    <table class="panel-table">
-                        <tr>
+                        <table class="panel-table">
+                            <tr>
 
-                            <td class="panel-header">
-                                    {{panel.name}}
-                            </td>
+                                <td class="panel-header">
+                                        {{panel.name}}
+                                </td>
 
-                            <td>
-                                <div class="panel-description">
-                                Panel ID: &nbsp;&nbsp;&nbsp;&nbsp;{{panel.id}}<br />
-                                Abbreviation: {{panel.abbreviation}}<br />
-                                Alias: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{panel.alias}}<br />
-                                Description: &nbsp;{{panel.description}}<br />
-                                Identifier: &nbsp;&nbsp;{{panel.identifier}}<br />
-                                Created at: &nbsp;&nbsp;{{panel.created_at}}<br />
-                                Updated at: &nbsp;&nbsp;{{panel.updated_at}}
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                                <td class="panel-description">
+                                    Panel ID: &nbsp;&nbsp;&nbsp;&nbsp;{{panel.id}}<br />
+                                    Abbreviation: {{panel.abbreviation}}<br />
+                                    Alias: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{panel.alias}}<br />
+                                    Description: &nbsp;{{panel.description}}<br />
+                                    Identifier: &nbsp;&nbsp;{{panel.identifier}}<br />
+                                    Created at: &nbsp;&nbsp;{{panel.created_at}}<br />
+                                    Updated at: &nbsp;&nbsp;{{panel.updated_at}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <div class="card-body">
                         <LabTest v-bind:panelId="panel.id" v-bind:labTests="labTests" />
