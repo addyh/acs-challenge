@@ -42,7 +42,7 @@ window.startVue = function() {
 
 
 $(function() {
-
+/*
     $.get("http://challenge.acslabtest.com/api/lab/panels", function(data) {
         // Save panel data
         window.panelsData = data;
@@ -59,5 +59,6 @@ $(function() {
     }).fail(function() {
         fallback();
     });
-
+*/
+fallback();
 });

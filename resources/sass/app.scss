@@ -16,3 +16,68 @@
 #app {
   padding: 20px;
 }
+
+td {
+	width:25%
+}
+td.panel-header{
+	text-align:center
+}
+
+@media (max-width: 991px) {
+	td {
+		width: 50%;
+		display: block;
+		float: left;
+		margin-top: 20px;
+	}
+	table.panel-table td {
+		width: 100%;
+	}
+}
+
+.lab-test-col-1,
+.lab-test-col-3 {
+	text-align: left !important;
+}
+@media (min-width: 992px) {
+	.lab-test-col-1,
+	.lab-test-col-3 {
+	width: 15%;
+	}
+	.lab-test-col-2,
+	.lab-test-col-4 {
+	width: 35%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lab-test-col-1,
+	.lab-test-col-3 {
+		width: 25%;
+	}
+	.lab-test-col-2,
+	.lab-test-col-4 {
+		width: 75%;
+	}
+}
+
+.lab-test-col-1,
+.lab-test-col-3 {
+	max-width: 120px;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+@media (max-width: 580px) {
+	#app, .col-md-12 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
